@@ -10,6 +10,7 @@
         <module>dubbo-consumer</module>
         <module>dubbo-common</module>
         <module>dubbo-api</module>
+        <module>dubbox-provider</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -30,11 +31,6 @@
           <groupId>org.springframework</groupId>
           <artifactId>spring-context</artifactId>
           <version>3.2.4.RELEASE</version>
-      </dependency>
-      <dependency>
-          <groupId>com.alibaba</groupId>
-          <artifactId>dubbo</artifactId>
-          <version>2.5.3</version>
       </dependency>
       <dependency>
           <groupId>com.101tec</groupId>
