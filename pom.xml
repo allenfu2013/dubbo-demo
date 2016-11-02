@@ -11,6 +11,7 @@
         <module>dubbo-common</module>
         <module>dubbo-api</module>
         <module>dubbox-provider</module>
+        <module>dubbox-consumer</module>
     </modules>
     <packaging>pom</packaging>
 

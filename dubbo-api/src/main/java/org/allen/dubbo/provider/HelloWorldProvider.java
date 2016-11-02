@@ -18,10 +18,10 @@ public class HelloWorldProvider {
 
         ProtocolConfig protocolConfig = new ProtocolConfig();
         protocolConfig.setName("dubbo");
-        protocolConfig.setPort(20081);
+        protocolConfig.setPort(20082);
         protocolConfig.setThreads(10);
 
-        ServiceConfig<HelloWorldService> serviceConfig = new ServiceConfig<>();
+        ServiceConfig<HelloWorldService> serviceConfig = new ServiceConfig<HelloWorldService>();
         serviceConfig.setApplication(applicationConfig);
         serviceConfig.setRegistry(registryConfig);
         serviceConfig.setProtocol(protocolConfig);

@@ -6,12 +6,9 @@
        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd ">
 
-    <dubbo:application name="dubbox-provider" owner="allen" organization="allen"/>
+    <dubbo:application name="dubbox-consumer" owner="allen" organization="allen"/>
     <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
-    <!-- use tomcat server -->
-    <dubbo:protocol name="rest" port="8888" threads="500" contextpath="services" server="tomcat" accepts="500"
-                    extension="com.alibaba.dubbo.rpc.protocol.rest.support.LoggingFilter"/>
 
-    <dubbo:service interface="org.allen.dubbox.api.UserRestService" ref="userRestService" protocol="rest"/>
-    <bean id="userRestService" class="org.allen.dubbox.UserRestServiceImpl"/>
+    <dubbo:reference id="userRestService" interface="org.allen.dubbox.api.UserRestService"/>
+
 </beans>
