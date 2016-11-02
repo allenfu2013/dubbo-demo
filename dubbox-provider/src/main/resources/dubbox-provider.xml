@@ -14,4 +14,6 @@
 
     <dubbo:service interface="org.allen.dubbox.api.UserRestService" ref="userRestService" protocol="rest"/>
     <bean id="userRestService" class="org.allen.dubbox.UserRestServiceImpl"/>
+
+
 </beans>

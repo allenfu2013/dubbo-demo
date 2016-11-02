@@ -9,6 +9,8 @@
     <dubbo:application name="dubbox-consumer" owner="allen" organization="allen"/>
     <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
 
-    <dubbo:reference id="userRestService" interface="org.allen.dubbox.api.UserRestService"/>
+    <!--<dubbo:reference id="userRestService" interface="org.allen.dubbox.api.UserRestService"/>-->
 
+    <dubbo:reference id="userRestService" interface="org.allen.dubbox.api.UserRestService" url="rest://localhost:8888/services/"/>
+    <!--<dubbo:reference id="anotherUserRestService" interface="com.alibaba.dubbo.demo.user.facade.AnotherUserRestService" url="rest://localhost:8888/services/"/>-->
 </beans>
