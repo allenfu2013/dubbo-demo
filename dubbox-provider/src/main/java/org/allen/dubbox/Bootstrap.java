@@ -10,6 +10,7 @@ public class Bootstrap {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath*:dubbox-provider.xml");
         context.start();
         System.out.println("服务已经启动...");
+        System.out.println("输入任意字符退出:");
         System.in.read();
     }
 }
