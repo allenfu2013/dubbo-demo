@@ -6,9 +6,6 @@ spring xml配置服务提供者
 ## dubbo-consumer
 spring xml配置服务消费者
 
-* 设置合理的远程调用timeout
-* 设置远程调用超时后的重试次数
-
 ## dubbo-common
 存放dubbo或者dubbox服务接口interface供consumer和provider使用
 
@@ -20,3 +17,9 @@ spring xml配置提供rest服务
 
 ## dubbox-consumer
 spring xml配置消费服务
+
+## 超时设置
+
+** provider和consumer都可以设置超时时间
+** consumer优先级高于provider
+** consumer默认超时时间为1秒
